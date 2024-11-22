@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MA Towers Management</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1>MACO ONE Towers Management</h1>
+    </header>
+    <div class="container">
+        <!-- Floor 1 -->
+        <div class="floor">
+            <button class="floor_button" onclick="toggleUnits('floor-1')">Floor 1</button>
+            <div id="floor-1" class="units">
+                <div class="row">
+                    <div class="unit">
+                        <button class="unit-button" onclick="toggleDetails('unit-101')">101</button>
+                        <div id="unit-101" class="unit-details">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Type:</strong></td>
+                                        <td>3 Bedroom</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Owner:</strong></td>
+                                        <td>John Doe</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status:</strong></td>
+                                        <td>Sold</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Balance:</strong></td>
+                                        <td>$20,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Service Fee Status:</strong></td>
+                                        <td>Pending</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy:</strong></td>
+                                        <td>Vacant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy Status:</strong></td>
+                                        <td>Tenant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tenant Name:</strong></td>
+                                        <td>Jane Doe</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rent Payment Status:</strong></td>
+                                        <td>Paid</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <button class="unit-button" onclick="toggleDetails('unit-102')">102</button>
+                        <div id="unit-102" class="unit-details">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Type:</strong></td>
+                                        <td>4 Bedroom</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Owner:</strong></td>
+                                        <td>Jane Smith</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status:</strong></td>
+                                        <td>Sold</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Balance:</strong></td>
+                                        <td>$15,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Service Fee Status:</strong></td>
+                                        <td>Cleared</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy:</strong></td>
+                                        <td>Occupied</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy Status:</strong></td>
+                                        <td>Owner</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tenant Name:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rent Payment Status:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <button class="unit-button" onclick="toggleDetails('unit-103')">103</button>
+                        <div id="unit-103" class="unit-details">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Type:</strong></td>
+                                        <td>4 Bedroom</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Owner:</strong></td>
+                                        <td>Michael Brown</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status:</strong></td>
+                                        <td>Sold</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Balance:</strong></td>
+                                        <td>$10,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Service Fee Status:</strong></td>
+                                        <td>Pending</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy:</strong></td>
+                                        <td>Occupied</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy Status:</strong></td>
+                                        <td>Tenant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tenant Name:</strong></td>
+                                        <td>Emily Davis</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rent Payment Status:</strong></td>
+                                        <td>Overdue</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <button class="unit-button" onclick="toggleDetails('unit-104')">104</button>
+                        <div id="unit-104" class="unit-details">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Type:</strong></td>
+                                        <td>3 Bedroom</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Owner:</strong></td>
+                                        <td>Sarah Johnson</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status:</strong></td>
+                                        <td>Sold</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Balance:</strong></td>
+                                        <td>$5,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Service Fee Status:</strong></td>
+                                        <td>Cleared</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy:</strong></td>
+                                        <td>Vacant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy Status:</strong></td>
+                                        <td>Tenant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tenant Name:</strong></td>
+                                        <td>None</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rent Payment Status:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floor 2 -->
+        <div class="floor">
+            <button class="floor_button" onclick="toggleUnits('floor-2')">Floor 2</button>
+            <div id="floor-2" class="units">
+                <div class="row">
+                    <div class="unit">
+                        <button class="unit-button" onclick="toggleDetails('unit-201')">201</button>
+                        <div id="unit-201" class="unit-details">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Type:</strong></td>
+                                        <td>2 Bedroom</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Owner:</strong></td>
+                                        <td>James Lee</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status:</strong></td>
+                                        <td>Sold</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Balance:</strong></td>
+                                        <td>$25,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Service Fee Status:</strong></td>
+                                        <td>Pending</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy:</strong></td>
+                                        <td>Occupied</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy Status:</strong></td>
+                                        <td>Owner</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tenant Name:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rent Payment Status:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <button class="unit-button" onclick="toggleDetails('unit-202')">202</button>
+                        <div id="unit-202" class="unit-details">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Type:</strong></td>
+                                        <td>3 Bedroom</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Owner:</strong></td>
+                                        <td>Linda Scott</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status:</strong></td>
+                                        <td>Sold</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Balance:</strong></td>
+                                        <td>$18,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Service Fee Status:</strong></td>
+                                        <td>Cleared</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy:</strong></td>
+                                        <td>Occupied</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy Status:</strong></td>
+                                        <td>Tenant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tenant Name:</strong></td>
+                                        <td>John Smith</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rent Payment Status:</strong></td>
+                                        <td>Paid</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <button class="unit-button" onclick="toggleDetails('unit-203')">203</button>
+                        <div id="unit-203" class="unit-details">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Type:</strong></td>
+                                        <td>3 Bedroom</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Owner:</strong></td>
+                                        <td>David White</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status:</strong></td>
+                                        <td>Sold</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Balance:</strong></td>
+                                        <td>$22,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Service Fee Status:</strong></td>
+                                        <td>Pending</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy:</strong></td>
+                                        <td>Occupied</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy Status:</strong></td>
+                                        <td>Owner</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tenant Name:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rent Payment Status:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <button class="unit-button" onclick="toggleDetails('unit-204')">204</button>
+                        <div id="unit-204" class="unit-details">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Type:</strong></td>
+                                        <td>2 Bedroom</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Owner:</strong></td>
+                                        <td>Patricia Williams</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status:</strong></td>
+                                        <td>Sold</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Balance:</strong></td>
+                                        <td>$30,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Service Fee Status:</strong></td>
+                                        <td>Cleared</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy:</strong></td>
+                                        <td>Vacant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy Status:</strong></td>
+                                        <td>Tenant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tenant Name:</strong></td>
+                                        <td>None</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rent Payment Status:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Floor 6 -->
+        <div class="floor">
+            <button class="floor_button" onclick="toggleUnits('floor-6')">Floor 6</button>
+            <div id="floor-6" class="units">
+                <div class="row">
+                    <div class="unit">
+                        <button class="unit-button" onclick="toggleDetails('unit-601')">601</button>
+                        <div id="unit-601" class="unit-details">
+                            <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Type:</strong></td>
+                                        <td>2 Bedroom</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Owner:</strong></td>
+                                        <td>Emily Davis</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status:</strong></td>
+                                        <td>Sold</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Balance:</strong></td>
+                                        <td>$5,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Service Fee Status:</strong></td>
+                                        <td>Pending</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy:</strong></td>
+                                        <td>Occupied</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy Status:</strong></td>
+                                        <td>Owner</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tenant Name:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rent Payment Status:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="unit">
+                        <button class="unit-button" onclick="toggleDetails('unit-602')">602</button>
+                        <div id="unit-602" class="unit-details">
+                            <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Type:</strong></td>
+                                        <td>2 Bedroom</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Owner:</strong></td>
+                                        <td>Not Sold</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status:</strong></td>
+                                        <td>Vacant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Balance:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Service Fee Status:</strong></td>
+                                        <td>Pending</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy:</strong></td>
+                                        <td>Vacant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy Status:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tenant Name:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rent Payment Status:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="unit">
+                        <button class="unit-button" onclick="toggleDetails('unit-603')">603</button>
+                        <div id="unit-603" class="unit-details">
+                            <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Type:</strong></td>
+                                        <td>2 Bedroom</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Owner:</strong></td>
+                                        <td>James Green</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status:</strong></td>
+                                        <td>Sold</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Balance:</strong></td>
+                                        <td>$2,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Service Fee Status:</strong></td>
+                                        <td>Pending</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy:</strong></td>
+                                        <td>Occupied</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy Status:</strong></td>
+                                        <td>Tenant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tenant Name:</strong></td>
+                                        <td>Emily Davis</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rent Payment Status:</strong></td>
+                                        <td>Paid</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="unit">
+                        <button class="unit-button" onclick="toggleDetails('unit-604')">604</button>
+                        <div id="unit-604" class="unit-details">
+                            <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Type:</strong></td>
+                                        <td>2 Bedroom</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Owner:</strong></td>
+                                        <td>Not Sold</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status:</strong></td>
+                                        <td>Vacant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Balance:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Service Fee Status:</strong></td>
+                                        <td>Pending</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy:</strong></td>
+                                        <td>Vacant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy Status:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tenant Name:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rent Payment Status:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="unit">
+                        <button class="unit-button" onclick="toggleDetails('unit-605')">605</button>
+                        <div id="unit-605" class="unit-details">
+                            <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Type:</strong></td>
+                                        <td>2 Bedroom</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Owner:</strong></td>
+                                        <td>Maria Johnson</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status:</strong></td>
+                                        <td>Sold</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Balance:</strong></td>
+                                        <td>$0</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Service Fee Status:</strong></td>
+                                        <td>Cleared</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy:</strong></td>
+                                        <td>Occupied</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy Status:</strong></td>
+                                        <td>Owner</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tenant Name:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rent Payment Status:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="unit">
+                        <button class="unit-button" onclick="toggleDetails('unit-606')">606</button>
+                        <div id="unit-606" class="unit-details">
+                            <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Type:</strong></td>
+                                        <td>2 Bedroom</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Owner:</strong></td>
+                                        <td>Daniel White</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status:</strong></td>
+                                        <td>Sold</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Balance:</strong></td>
+                                        <td>$3,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Service Fee Status:</strong></td>
+                                        <td>Pending</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy:</strong></td>
+                                        <td>Occupied</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy Status:</strong></td>
+                                        <td>Tenant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tenant Name:</strong></td>
+                                        <td>John Smith</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rent Payment Status:</strong></td>
+                                        <td>Paid</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <!-- Add more units as needed -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Floor 7 -->
+        <div class="floor">
+            <button class="floor_button" onclick="toggleUnits('floor-7')">Floor 7</button>
+            <div id="floor-7" class="units">
+                <div class="row">
+                    <div class="unit">
+                        <button class="unit-button" onclick="toggleDetails('unit-701')">701</button>
+                        <div id="unit-701" class="unit-details">
+                            <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Type:</strong></td>
+                                        <td>2 Bedroom</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Owner:</strong></td>
+                                        <td>Sarah Lee</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status:</strong></td>
+                                        <td>Sold</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Balance:</strong></td>
+                                        <td>$4,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Service Fee Status:</strong></td>
+                                        <td>Pending</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy:</strong></td>
+                                        <td>Occupied</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy Status:</strong></td>
+                                        <td>Owner</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tenant Name:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rent Payment Status:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="unit">
+                        <button class="unit-button" onclick="toggleDetails('unit-702')">702</button>
+                        <div id="unit-702" class="unit-details">
+                            <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Type:</strong></td>
+                                        <td>2 Bedroom</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Owner:</strong></td>
+                                        <td>Not Sold</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status:</strong></td>
+                                        <td>Vacant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Balance:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Service Fee Status:</strong></td>
+                                        <td>Pending</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy:</strong></td>
+                                        <td>Vacant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy Status:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tenant Name:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rent Payment Status:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="unit">
+                        <button class="unit-button" onclick="toggleDetails('unit-703')">703</button>
+                        <div id="unit-703" class="unit-details">
+                            <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Type:</strong></td>
+                                        <td>2 Bedroom</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Owner:</strong></td>
+                                        <td>Michael Turner</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status:</strong></td>
+                                        <td>Sold</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Balance:</strong></td>
+                                        <td>$2,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Service Fee Status:</strong></td>
+                                        <td>Pending</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy:</strong></td>
+                                        <td>Occupied</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy Status:</strong></td>
+                                        <td>Tenant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tenant Name:</strong></td>
+                                        <td>Linda White</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rent Payment Status:</strong></td>
+                                        <td>Paid</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="unit">
+                        <button class="unit-button" onclick="toggleDetails('unit-704')">704</button>
+                        <div id="unit-704" class="unit-details">
+                            <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Type:</strong></td>
+                                        <td>2 Bedroom</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Owner:</strong></td>
+                                        <td>Not Sold</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status:</strong></td>
+                                        <td>Vacant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Balance:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Service Fee Status:</strong></td>
+                                        <td>Pending</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy:</strong></td>
+                                        <td>Vacant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy Status:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tenant Name:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rent Payment Status:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="unit">
+                        <button class="unit-button" onclick="toggleDetails('unit-705')">705</button>
+                        <div id="unit-705" class="unit-details">
+                            <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Type:</strong></td>
+                                        <td>2 Bedroom</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Owner:</strong></td>
+                                        <td>Olivia Brown</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status:</strong></td>
+                                        <td>Sold</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Balance:</strong></td>
+                                        <td>$0</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Service Fee Status:</strong></td>
+                                        <td>Cleared</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy:</strong></td>
+                                        <td>Occupied</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy Status:</strong></td>
+                                        <td>Owner</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tenant Name:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rent Payment Status:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="unit">
+                        <button class="unit-button" onclick="toggleDetails('unit-706')">706</button>
+                        <div id="unit-706" class="unit-details">
+                            <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Type:</strong></td>
+                                        <td>2 Bedroom</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Owner:</strong></td>
+                                        <td>Isabella Harris</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Status:</strong></td>
+                                        <td>Sold</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Balance:</strong></td>
+                                        <td>$1,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Service Fee Status:</strong></td>
+                                        <td>Pending</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy:</strong></td>
+                                        <td>Occupied</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Occupancy Status:</strong></td>
+                                        <td>Owner</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Tenant Name:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rent Payment Status:</strong></td>
+                                        <td>N/A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Toggle visibility of units for a floor
+        function toggleUnits(floorId) {
+            const unitsDiv = document.getElementById(floorId);
+            if (unitsDiv.style.display === 'none' || unitsDiv.style.display === '') {
+                unitsDiv.style.display = 'block';
+            } else {
+                unitsDiv.style.display = 'none';
+            }
+        }
+
+        // Toggle visibility of unit details
+        function toggleDetails(unitId) {
+            const detailsDiv = document.getElementById(unitId);
+            if (detailsDiv.style.display === 'none' || detailsDiv.style.display === '') {
+                detailsDiv.style.display = 'block';
+            } else {
+                detailsDiv.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
